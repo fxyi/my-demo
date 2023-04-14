@@ -1,4 +1,4 @@
-import { Scene, WebGLRenderer, Light, PerspectiveCamera, TextureLoader, AxesHelper, AmbientLight, PointLight, Color } from "three";
+import { Scene, WebGLRenderer, Light, PerspectiveCamera, AxesHelper, AmbientLight, PointLight, Color } from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
 export class ThreeEnv {
@@ -6,7 +6,7 @@ export class ThreeEnv {
   public _renderer!: WebGLRenderer;
   private _canvas!: HTMLCanvasElement;
   public _camera!: PerspectiveCamera;
-  private _orbitControls!: OrbitControls;
+  // private _orbitControls!: OrbitControls;
   private _lightList!: Light[];
 
   constructor() {
@@ -18,7 +18,8 @@ export class ThreeEnv {
     this._scene.add(ThreeEnv.initAxesHelper());
     this._lightList = ThreeEnv.initLight();
     this._lightList.forEach(light => this._scene.add(light));
-    this._orbitControls = this.initOrbitControls();
+    this.initOrbitControls();
+    // this._orbitControls = this.initOrbitControls();
     this.initResize();
 
     // this.render();
