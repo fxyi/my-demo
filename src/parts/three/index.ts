@@ -5,7 +5,7 @@ import TWEEN from "@tweenjs/tween.js";
 const envInstance = new ThreeEnv();
 
 import { sriteAnimation } from "./test/animation";
-const mixer = sriteAnimation(envInstance)
+const mixer = sriteAnimation(envInstance);
 
 // import { boxAnimation } from "./test/animation";
 // const mixer = boxAnimation(envInstance)

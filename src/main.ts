@@ -1,4 +1,8 @@
 import "./style.css";
+import "./parts/learn-js/index"
+// import "./parts/three/index"
+
+
 // import typescriptLogo from "./typescript.svg";
 // import viteLogo from "/vite.svg";
 
@@ -17,5 +21,3 @@ import "./style.css";
 //     </div>
 //   </div>
 // `;
-
-import "./parts/three/index"

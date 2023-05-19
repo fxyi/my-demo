@@ -4,6 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "worker": "node ./src/parts/node/worker.cjs",
+    "master": "node ./src/parts/node/master.cjs",
     "dev": "vite --open",
     "build": "tsc && vite build",
     "preview": "vite preview"
